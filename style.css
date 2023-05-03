@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Mulish', sans-serif;
+  min-width: 43rem;
+}
+
+header {
+  text-align: center;
+}
+
+#astronaut {
+  margin-bottom: 1.7rem;
+}
+
+header h1 {
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: #B52184;
+
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #312D64;
+
+  margin-bottom: 3.5rem;
+}
+
+header button {
+  border: none;
+  background-color: transparent;
+
+  margin-bottom: 9.3rem;
+}
+
+main {
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  padding: 5.3rem 3.9rem 5.58rem;
+}
+
+.planet {
+  background-color: white;
+  padding: 2.6rem;
+
+  box-shadow: 0px 3.31077px 13.2431px rgba(0, 0, 0, 0.25);
+  border-radius: 19.8646px; 
+}
+.planet img {
+  margin-bottom: 3.3rem;
+}
+
+.planet:nth-child(1) {
+  margin-bottom: 5rem;
+}
+
+.planet:nth-child(2) {
+  margin-bottom: 5rem;
+}
+
+.planet h2 {
+  font-weight: 900;
+  font-size: 2.9rem;
+  line-height: 3.7rem;
+  color: #B52184;
+
+  margin-bottom: 2rem;
+}
+
+.planet p {
+  
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #312D64;
+  max-width: 26.5rem;
+}
+
+.contato {
+  padding: 7rem 4rem 6.5rem;
+}
+
+.contact h2 {
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  
+  color: #B52184;
+
+  margin-bottom: 4.3rem;
+}
+
+form {
+  display: flex;
+  gap: 2.4rem;
+  flex-direction: column;
+}
+
+form button {
+  width: fit-content;
+}
+
+textarea {
+  padding: 1.2rem 1.6rem 1.6rem;
+
+  font-family: 'Mulish';
+  gap: 1rem;
+    
+  border: 2px solid #2d2969;
+  border-radius: 1.6rem;
+}
+
+::placeholder {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  color: #312D64;
+}
+
+
+.contact input {
+  font-family: 'Mulish';
+  padding: 1.2rem 1.6rem 1.2rem 5rem;
+  width: 100%;
+
+  border: 2px solid #2d2969;
+  border-radius: 1.6rem;
+  background-repeat: no-repeat;
+  background-position-x: 14px;
+  background-position-y: 8px;
+}
+
+.contato input:nth-child(1) {
+  background-image: url(./images/icon-user.svg);
+}
+
+.contato input:nth-child(2) {
+  background-image: url(./images/icon-email.svg);
+}
+
+.contact button {
+
+
+  font-family: 'Mulish';
+  border: none;
+  padding: 1.6rem;
+
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+  border-radius: 1.6rem;
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+
+  color: #FFFFFF;
+}
+
+footer {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  padding: 1.6rem;
+  height: 7.8rem;
+  background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+  font-family: 'Mulish';
+  font-weight: 600;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  color: #FFFFFF;
+}
