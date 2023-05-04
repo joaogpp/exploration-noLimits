@@ -11,7 +11,8 @@
 body {
   font-size: 1.6rem;
   font-family: 'Mulish', sans-serif;
-  min-width: 43rem;
+  /* min-width: 43rem; */
+  background-color: #F9F4FB;;
 }
 
 header {
@@ -20,20 +21,21 @@ header {
 
 #astronaut {
   margin-bottom: 1.7rem;
+  width: clamp(36rem, 25rem + 35vw, 76rem);
 }
 
 header h1 {
   font-weight: 900;
-  font-size: 3.2rem;
+  font-size: clamp(3.2rem, 2rem + 2vw, 5.8rem);
   line-height: 4rem;
   color: #B52184;
 
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 header p {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: clamp(2rem, 1rem + 1.5vw , 3.2rem);
   line-height: 2.5rem;
   color: #312D64;
 
@@ -58,9 +60,13 @@ main {
 
   box-shadow: 0px 3.31077px 13.2431px rgba(0, 0, 0, 0.25);
   border-radius: 19.8646px; 
+
+  width: clamp(35rem, 28rem + 12vw, 44.8rem);
 }
 .planet img {
   margin-bottom: 3.3rem;
+  width: clamp(8rem, 6rem + 3vw ,9.7rem);
+  height: clamp(8rem, 6rem + 3vw ,9.7rem);
 }
 
 .planet:nth-child(1) {
@@ -73,7 +79,7 @@ main {
 
 .planet h2 {
   font-weight: 900;
-  font-size: 2.9rem;
+  font-size: clamp(2.9rem, 1rem + 3vw, 3.5rem);
   line-height: 3.7rem;
   color: #B52184;
 
@@ -81,12 +87,11 @@ main {
 }
 
 .planet p {
-  
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, .2rem + 1vw, 1.94rem);
   line-height: 2rem;
   color: #312D64;
-  max-width: 26.5rem;
+  max-width: 32.1rem;
 }
 
 .contato {
@@ -123,6 +128,8 @@ textarea {
     
   border: 2px solid #2d2969;
   border-radius: 1.6rem;
+
+  background-color: transparent;
 }
 
 ::placeholder {
@@ -143,6 +150,7 @@ textarea {
   background-repeat: no-repeat;
   background-position-x: 14px;
   background-position-y: 8px;
+  background-color: transparent;
 }
 
 .contato input:nth-child(1) {
@@ -184,3 +192,68 @@ footer {
   line-height: 2.4rem;
   color: #FFFFFF;
 }
+
+@media (min-width: 850px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    justify-content: center;
+  }
+} 
+
+@media (min-width: 1440px) {
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 3rem 0 10rem;
+
+    margin-bottom: 10.3rem;
+
+    text-align: start;
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6rem;
+
+    padding: 11rem 6.4rem;
+  }
+
+  .planet {
+    width: 100%;
+  }
+
+  .planet:nth-child(1) {
+    margin-bottom: 0;
+  }
+  .planet:nth-child(2) {
+    margin-bottom: 0;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .content button {
+    position: absolute;
+    top: 30rem;
+  }
+
+  .contato {
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-position-x: right ;
+  }
+
+  .contact {
+    max-width: 59.5rem;
+    padding-left: 9.5rem;
+  }
+} 
